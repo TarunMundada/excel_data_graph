@@ -37,7 +37,7 @@ def plot_superimposed_chart(df):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return send_file('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
